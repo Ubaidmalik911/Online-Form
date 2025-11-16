@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online admission form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    
+    <fieldset>
+      <legend>Your Details:</legend>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </fieldset>
+    <input type="hidden" name="access_key" value="fef49add-8bab-4dbd-84fa-69849689e759">
+
+    <fieldset>
+      <legend>Your Review:</legend>
+
+      <label for="hear">How did you hear about us?</label>
+      <select id="hear" name="hear" required>
+        <option value="" disabled selected>-- Please choose an option --</option>
+        <option value="google">Google</option>
+        <option value="friend">Friend</option>
+        <option value="advert">Advert</option>
+      </select>
+
+      <p>Would you visit again?</p>
+      <div class="radio-group">
+        <input type="radio" id="yes" name="visit" value="yes" required>
+        <label for="yes">Yes</label>
+
+        <input type="radio" id="no" name="visit" value="no">
+        <label for="no">No</label>
+
+        <input type="radio" id="maybe" name="visit" value="maybe">
+        <label for="maybe">Maybe</label>
+      </div>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="5" cols="40" required></textarea>
+
+      <input type="checkbox" id="updates" name="updates" checked required>
+      <label for="updates">Sign me up for email updates</label>
+
+      <input type="submit" value="Submit review">
+    </fieldset>
+    
+  </form>
+</body>
+</html>
